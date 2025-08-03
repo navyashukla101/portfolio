@@ -1,70 +1,130 @@
-# Getting Started with Create React App
+# Personal Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website built with React and Tailwind CSS featuring dark/light mode toggle, smooth animations, and a professional design.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- 🌓 Dark/Light mode toggle with gradient effects
+- 📱 Fully responsive design
+- ⚡ Smooth animations and transitions
+- 🎨 Modern UI with Tailwind CSS
+- 📧 Contact form integration ready
+- 🚀 Fast loading and optimized performance
 
-### `npm start`
+## Sections
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Home**: Hero section with introduction and profile picture
+- **About**: Detailed information about skills and experience
+- **Projects**: Showcase of personal projects with GitHub links
+- **Tech Stack**: Visual display of technologies and skills
+- **Contact**: Links to email, LinkedIn, and GitHub
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (version 14 or higher)
+- npm or yarn
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/portfolio.git
+cd portfolio
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install dependencies:
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Start the development server:
+```bash
+npm start
+```
 
-### `npm run eject`
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Customization
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Personal Information
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Update the following files with your information:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **src/components/Home.js**: Update name, title, and introduction
+2. **src/components/About.js**: Update about section and statistics
+3. **src/components/Projects.js**: Replace with your actual projects
+4. **src/components/TechStack.js**: Update with your tech stack
+5. **src/components/Contact.js**: Update contact information
 
-## Learn More
+### Profile Picture
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Replace the placeholder image in `src/components/Home.js`:
+```javascript
+src="path/to/your/profile-picture.jpg"
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Colors and Styling
 
-### Code Splitting
+The website uses a purple/pink gradient theme. To customize colors, update the Tailwind classes throughout the components.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Building for Production
 
-### Analyzing the Bundle Size
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This builds the app for production to the `build` folder.
 
-### Making a Progressive Web App
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The website can be deployed to various platforms:
 
-### Advanced Configuration
+- **Netlify**: Drag and drop the build folder
+- **Vercel**: Connect your GitHub repository
+- **GitHub Pages**: Use `gh-pages` package
+- **Heroku**: Deploy with buildpack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Technologies Used
 
-### Deployment
+- React 18
+- Tailwind CSS
+- Lucide React (for icons)
+- HTML5 & CSS3
+- JavaScript ES6+
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## File Structure
 
-### `npm run build` fails to minify
+```
+src/
+├── components/
+│   ├── Navbar.js          # Navigation component
+│   ├── Home.js            # Hero/landing section
+│   ├── About.js           # About me section
+│   ├── Projects.js        # Projects showcase
+│   ├── TechStack.js       # Technologies display
+│   └── Contact.js         # Contact information
+├── App.js                 # Main app component
+├── App.css               # Custom styles
+├── index.js              # React entry point
+└── index.css             # Global styles
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Contact
+
+Your Name - your.email@example.com
+
+Project Link: [https://github.com/yourusername/portfolio](https://github.com/yourusername/portfolio)
