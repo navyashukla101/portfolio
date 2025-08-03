@@ -31,7 +31,7 @@ const Projects = ({ darkMode }) => {
       name: "Portfolio Website",
       description:
         "A modern, fully responsive personal portfolio with light/dark mode, smooth animations, and performance optimization.",
-      github: "https://github.com/yourusername/portfolio", // replace with actual link
+      github: "https://github.com/navyashukla101/portfolio.git", // replace with actual link
       technologies: ["React", "Tailwind CSS", "Framer Motion"],
     },
   ];
