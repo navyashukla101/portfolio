@@ -4,12 +4,12 @@ import profileImage from "../assets/navya2.jpg"; // Add this import at the top
 const Home = ({ darkMode, scrollToSection }) => {
   return (
     <section id="home" className="pt-20 min-h-screen flex items-center">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="flex flex-col lg:flex-row items-center justify-between">
-          <div className="lg:w-1/2 space-y-6 animate-fadeInLeft">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
+          <div className="w-full lg:w-1/2 space-y-6 text-center lg:text-left">
             <div className="space-y-4">
               <h1
-                className={`text-5xl lg:text-7xl font-bold ${
+                className={`text-4xl sm:text-5xl lg:text-7xl font-bold ${
                   darkMode
                     ? "bg-gradient-to-r from-purple-400 via-pink-400 to-red-400 bg-clip-text text-transparent"
                     : "text-gray-900"
@@ -18,7 +18,7 @@ const Home = ({ darkMode, scrollToSection }) => {
                 Hi, I'm Navya Shukla
               </h1>
               <h2
-                className={`text-2xl lg:text-3xl ${
+                className={`text-xl sm:text-2xl lg:text-3xl ${
                   darkMode
                     ? "bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent"
                     : "text-purple-600"
@@ -29,7 +29,7 @@ const Home = ({ darkMode, scrollToSection }) => {
             </div>
 
             <p
-              className={`text-lg leading-relaxed ${
+              className={`text-base sm:text-lg leading-relaxed ${
                 darkMode ? "text-gray-300" : "text-gray-600"
               }`}
             >
@@ -42,7 +42,7 @@ const Home = ({ darkMode, scrollToSection }) => {
               intersection of AI and software systems.
             </p>
 
-            <div className="flex space-x-4">
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center lg:justify-start">
               <button
                 onClick={() => scrollToSection("projects")}
                 className={`px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 ${
@@ -66,17 +66,17 @@ const Home = ({ darkMode, scrollToSection }) => {
             </div>
           </div>
 
-          <div className="lg:w-1/2 mt-12 lg:mt-0 flex justify-center animate-fadeInRight">
+          <div className="w-full lg:w-1/2 flex justify-center">
             <div
               className={`relative ${
                 darkMode
                   ? "bg-gradient-to-br from-purple-500/20 to-pink-500/20"
                   : "bg-gray-100"
-              } rounded-full p-8 transform hover:scale-105 transition-all duration-300`}
+              } rounded-full p-4 sm:p-8 transform hover:scale-105 transition-all duration-300`}
             >
-              <div className="w-64 h-64 rounded-full overflow-hidden">
+              <div className="w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden">
                 <img
-                  src={profileImage} // Update this line
+                  src={profileImage}
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />

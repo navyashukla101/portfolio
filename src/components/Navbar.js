@@ -1,7 +1,17 @@
-import React from "react";
-import { Sun, Moon, User, Briefcase, Code, Phone } from "lucide-react";
+import React, { useState } from "react";
+import { Sun, Moon, User, Briefcase, Code, Phone, Menu, X } from "lucide-react";
 
 const Navbar = ({ darkMode, setDarkMode, activeSection, scrollToSection }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navItems = [
+    { id: "home", label: "Home", icon: User },
+    { id: "about", label: "About", icon: User },
+    { id: "projects", label: "Projects", icon: Briefcase },
+    { id: "techstack", label: "Tech Stack", icon: Code },
+    { id: "contact", label: "Contact", icon: Phone },
+  ];
+
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -22,15 +32,10 @@ const Navbar = ({ darkMode, setDarkMode, activeSection, scrollToSection }) => {
             Portfolio
           </div>
 
-          <div className="flex items-center space-x-8">
-            <div className="hidden md:flex space-x-6">
-              {[
-                { id: "home", label: "Home", icon: User },
-                { id: "about", label: "About", icon: User },
-                { id: "projects", label: "Projects", icon: Briefcase },
-                { id: "techstack", label: "Tech Stack", icon: Code },
-                { id: "contact", label: "Contact", icon: Phone },
-              ].map(({ id, label, icon: Icon }) => (
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-8">
+            <div className="flex space-x-6">
+              {navItems.map(({ id, label, icon: Icon }) => (
                 <button
                   key={id}
                   onClick={() => scrollToSection(id)}
@@ -61,7 +66,66 @@ const Navbar = ({ darkMode, setDarkMode, activeSection, scrollToSection }) => {
               {darkMode ? <Sun size={20} /> : <Moon size={20} />}
             </button>
           </div>
+
+          {/* Mobile Navigation */}
+          <div className="md:hidden flex items-center space-x-4">
+            <button
+              onClick={() => setDarkMode(!darkMode)}
+              className={`p-2 rounded-lg transition-all duration-300 ${
+                darkMode
+                  ? "bg-gradient-to-r from-yellow-400 to-orange-400 text-gray-900"
+                  : "bg-gray-200 text-gray-700"
+              }`}
+            >
+              {darkMode ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className={`p-2 rounded-lg ${
+                darkMode ? "text-white" : "text-gray-700"
+              }`}
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
+
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div
+            className={`md:hidden absolute left-0 right-0 p-4 ${
+              darkMode
+                ? "bg-gradient-to-r from-gray-800 via-purple-800 to-violet-800"
+                : "bg-white"
+            } border-t ${
+              darkMode ? "border-purple-500/20" : "border-gray-200"
+            }`}
+          >
+            <div className="flex flex-col space-y-2">
+              {navItems.map(({ id, label, icon: Icon }) => (
+                <button
+                  key={id}
+                  onClick={() => {
+                    scrollToSection(id);
+                    setIsMenuOpen(false);
+                  }}
+                  className={`flex items-center space-x-2 px-4 py-3 rounded-lg transition-all duration-300 ${
+                    activeSection === id
+                      ? darkMode
+                        ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white"
+                        : "bg-purple-600 text-white"
+                      : darkMode
+                      ? "text-white hover:bg-purple-500/20"
+                      : "text-gray-700 hover:bg-purple-100"
+                  }`}
+                >
+                  <Icon size={20} />
+                  <span>{label}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   );

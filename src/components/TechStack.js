@@ -51,14 +51,14 @@ const TechStack = ({ darkMode }) => {
           Tech Stack
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6">
           {techStack.map((tech, index) => (
             <div
               key={index}
-              className={`group p-6 rounded-xl text-center transition-all duration-300 transform hover:scale-110 hover:shadow-lg ${
+              className={`group p-4 sm:p-6 rounded-xl text-center transition-all duration-300 transform hover:scale-110 hover:shadow-lg ${
                 darkMode
-                  ? "bg-gradient-to-br from-gray-800/50 to-purple-800/50 border border-purple-500/20 hover:border-purple-400/40"
-                  : "bg-white shadow-sm hover:shadow-md border border-gray-200"
+                  ? "bg-gradient-to-br from-gray-800/50 to-purple-800/50 border border-purple-500/20"
+                  : "bg-white shadow-sm border border-gray-200"
               }`}
             >
               <div className="space-y-3">

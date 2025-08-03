@@ -26,7 +26,7 @@ const Contact = ({ darkMode }) => {
             out!
           </p>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
             {[
               {
                 icon: Mail,
@@ -52,10 +52,10 @@ const Contact = ({ darkMode }) => {
                 href={contact.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`group p-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${
+                className={`group p-6 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${
                   darkMode
-                    ? "bg-gradient-to-br from-gray-800/50 to-purple-800/50 border border-purple-500/20 hover:border-purple-400/40"
-                    : "bg-white shadow-sm hover:shadow-md border border-gray-200"
+                    ? "bg-gradient-to-br from-gray-800/50 to-purple-800/50 border border-purple-500/20"
+                    : "bg-white shadow-sm border border-gray-200"
                 }`}
               >
                 <div className="space-y-4">

@@ -36,7 +36,6 @@ const Projects = ({ darkMode }) => {
     },
   ];
 
-
   return (
     <section id="projects" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -50,14 +49,14 @@ const Projects = ({ darkMode }) => {
           My Projects
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`group p-6 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl ${
+              className={`group p-4 sm:p-6 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl ${
                 darkMode
-                  ? "bg-gradient-to-br from-gray-800/50 to-purple-800/50 border border-purple-500/20 hover:border-purple-400/40"
-                  : "bg-white shadow-lg hover:shadow-xl border border-gray-200"
+                  ? "bg-gradient-to-br from-gray-800/50 to-purple-800/50 border border-purple-500/20"
+                  : "bg-white shadow-lg border border-gray-200"
               }`}
             >
               <div className="space-y-4">
