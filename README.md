@@ -19,72 +19,10 @@ A modern, responsive portfolio website built with React and Tailwind CSS featuri
 - **Tech Stack**: Visual display of technologies and skills
 - **Contact**: Links to email, LinkedIn, and GitHub
 
-## Getting Started
 
-### Prerequisites
+## View the live portfolio here:
+🔗 https://navya-portfolio-neon.vercel.app/
 
-- Node.js (version 14 or higher)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/portfolio.git
-cd portfolio
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Start the development server:
-```bash
-npm start
-```
-
-4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-## Customization
-
-### Personal Information
-
-Update the following files with your information:
-
-1. **src/components/Home.js**: Update name, title, and introduction
-2. **src/components/About.js**: Update about section and statistics
-3. **src/components/Projects.js**: Replace with your actual projects
-4. **src/components/TechStack.js**: Update with your tech stack
-5. **src/components/Contact.js**: Update contact information
-
-### Profile Picture
-
-Replace the placeholder image in `src/components/Home.js`:
-```javascript
-src="path/to/your/profile-picture.jpg"
-```
-
-### Colors and Styling
-
-The website uses a purple/pink gradient theme. To customize colors, update the Tailwind classes throughout the components.
-
-## Building for Production
-
-```bash
-npm run build
-```
-
-This builds the app for production to the `build` folder.
-
-## Deployment
-
-The website can be deployed to various platforms:
-
-- **Netlify**: Drag and drop the build folder
-- **Vercel**: Connect your GitHub repository
-- **GitHub Pages**: Use `gh-pages` package
-- **Heroku**: Deploy with buildpack
 
 ## Technologies Used
 
@@ -94,30 +32,7 @@ The website can be deployed to various platforms:
 - HTML5 & CSS3
 - JavaScript ES6+
 
-## File Structure
 
-```
-src/
-├── components/
-│   ├── Navbar.js          # Navigation component
-│   ├── Home.js            # Hero/landing section
-│   ├── About.js           # About me section
-│   ├── Projects.js        # Projects showcase
-│   ├── TechStack.js       # Technologies display
-│   └── Contact.js         # Contact information
-├── App.js                 # Main app component
-├── App.css               # Custom styles
-├── index.js              # React entry point
-└── index.css             # Global styles
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Open a Pull Request
 
 ## License
 
@@ -125,6 +40,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Contact
 
-Your Name - your.email@example.com
+Navya Shukla -navyashukla10@example.com
 
-Project Link: [https://github.com/yourusername/portfolio](https://github.com/yourusername/portfolio)
+Project Link: [https://github.com/navyashukla101/portfolio.git](https://navya-portfolio-neon.vercel.app/)
