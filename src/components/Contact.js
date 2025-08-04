@@ -37,7 +37,7 @@ const Contact = ({ darkMode }) => {
               {
                 icon: Linkedin,
                 label: "LinkedIn",
-                value: "linkedin.com/in/johndoe",
+                value: "linkedin.com/in/navyashukla10",
                 href: "https://www.linkedin.com/in/navyashukla10",
               },
               {
