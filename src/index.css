@@ -33,3 +33,32 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.border-gradient-purple-pink {
+  border-image: linear-gradient(45deg, #9333ea, #ec4899) 1;
+}
+
+/* Globe Animation Styles */
+canvas {
+  backdrop-filter: blur(4px);
+}
+
+.dark canvas {
+  background: radial-gradient(circle at center, rgba(147, 51, 234, 0.2) 0%, transparent 70%);
+}
+
+@keyframes glow {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.3);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
+.dark canvas:hover {
+  animation: glow 2s ease-in-out infinite;
+}
