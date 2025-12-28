@@ -31,7 +31,7 @@ const Projects = ({ darkMode }) => {
       name: "Smart Travel Planner",
       description:
         "A full-stack MERN web application that lets users plan, manage, and share multi-destination trips with AI-powered activity suggestions, budget tracking, and visual itineraries.",
-      github: "https://github.com/navyashukla101/Travel-Planner", // replace with actual link
+      github: "https://github.com/navyashukla101/Travel-Planner", 
       technologies: ["React.js", "Express.js + Node.js", "Axios", "MongoDB Atlas"],
     },
   ];
