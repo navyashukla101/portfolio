@@ -28,11 +28,11 @@ const Projects = ({ darkMode }) => {
       technologies: ["Java", "Swing", "AWT"],
     },
     {
-      name: "Portfolio Website",
+      name: "Smart Travel Planner",
       description:
-        "A modern, fully responsive personal portfolio with light/dark mode, smooth animations, and performance optimization.",
-      github: "https://github.com/navyashukla101/portfolio.git", // replace with actual link
-      technologies: ["React", "Tailwind CSS", "Framer Motion"],
+        "A full-stack MERN web application that lets users plan, manage, and share multi-destination trips with AI-powered activity suggestions, budget tracking, and visual itineraries.",
+      github: "https://github.com/navyashukla101/Travel-Planner", // replace with actual link
+      technologies: ["React.js", "Express.js + Node.js", "Axios", "MongoDB Atlas"],
     },
   ];
 
